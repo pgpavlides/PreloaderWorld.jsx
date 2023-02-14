@@ -1,0 +1,33 @@
+.loader2 {
+    position: fixed;  // 🔹 make sure it appears above everything else
+    top:0; // 🔸Position it at the top left corner of the screen
+    left:0; // 🔸
+    width: 100vw; // 🔹 make it take the entire ViewPort
+    height: 100vh; // 🔹 
+    display: flex; // 🔸 Make sure its centerted on the screen
+    align-items: center; // 🔸
+    justify-content: center; // 🔸
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+
+    &--hidden {
+        opacity: 0;
+        visibility: hidden; // 🔹  when we wan to make this dissapear we add the --hidden class
+    }
+
+    &::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid #dddddd;
+        border-top-color: $c-pringGreen;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+    }
+
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn)}
+    to { transform: rotate(1turn)}
+}
