@@ -2,7 +2,9 @@
 # PreloaderWorld.jsx
 
 📖 This repository contains a collection of preloaders that you can use in your projects. 
+
 ⚠️Everything is under heavy development.⚠️
+
 A preloader is a visual element that is displayed to the user while the content of a website or application is being loaded. 
 They provide users with feedback that the page is still loading, which can help to improve user experience.
 
