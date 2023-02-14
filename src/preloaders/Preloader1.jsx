@@ -1,4 +1,5 @@
 import React from 'react';
+import '/src/preloaders/_preloader1.scss'
 
 function Preloader1(props) {
     return (

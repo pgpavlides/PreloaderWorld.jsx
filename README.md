@@ -2,7 +2,9 @@
 # PreloaderWorld.jsx
 
 📖 This repository contains a collection of preloaders that you can use in your projects. 
+
 ⚠️Everything is under heavy development.⚠️
+
 A preloader is a visual element that is displayed to the user while the content of a website or application is being loaded. 
 They provide users with feedback that the page is still loading, which can help to improve user experience.
 
@@ -30,7 +32,7 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 
 - **Add more preloaders**: rmY goal is to create a comprehensive collection of preloaders that you can use in your projects. I will be adding more preloaders to the repository on a regular basis, so be sure to check back often for updates.
 
-- **Improve documentation**: I want to make it as easy as possible for you to use the preloaders in your projects and for you to learn CSS & SASS. I will be improving the documentation and adding more examples to help you get started and understand the basics of how to create your own preloader.
+- **Improve documentation**: I want to make it as easy as possible for you to use the preloaders in your projects and for you to learn CSS & SASS. I will be improving the documentation and adding more examples to help you get started and understand the basics of how to create your own preloader. 
 
 - **Create a community**: I believe that sharing knowledge and resources is key to the success of any project. I want to create a community around this repository where you can share your own preloaders, ask for help, or give feedback.
 
