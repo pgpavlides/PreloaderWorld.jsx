@@ -1,25 +1,16 @@
 // @import "/src/utilities/_colors.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #011015;
-}
 
 .container {
-  position: relative;
+  
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #021116; 
+  
 
   & span {
     font-size: 15px;

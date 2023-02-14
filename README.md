@@ -16,6 +16,8 @@ All of these amazing people that share their knowledge with everyone for free.
 Make sure you check their channel and give them some love!
 
  - [dcode - Youtube 📹](https://www.youtube.com/@dcode-software)
+ - [FullStackTechnologies - Youtube 📹](https://www.youtube.com/@FullStackTechnologies)
+ 
 
 
 
@@ -44,4 +46,11 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 🌱 I’m currently learning Javascript, Typescript , CSS , HTML , React.
 
 📫 How to reach me ... georgepavlideswork@gmail.com
+
+## 💾 Update Log
+
+🟢 Tue 02/14/2023 - 03:03 PM --> Addition of 2 Preloaders. Update the Colors. Seperate body to each components for no confusion.
+🟢 Tue 02/14/2023 - 
+
+
 

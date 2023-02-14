@@ -1,31 +1,15 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;  
-  box-sizing: inherit;
-  -webkit-tap-highlight-color: transparent;
-}
 
-html {
-    //This defines what 1rem is.
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-  overflow: hidden;
-}
 
 .loader1 {
-    position: fixed;  // 🔹 make sure it appears above everything else
-    top:0; // 🔸Position it at the top left corner of the screen
-    left:0; // 🔸
-    width: 100vw; // 🔹 make it take the entire ViewPort
-    height: 100vh; // 🔹 
-    display: flex; // 🔸 Make sure its centerted on the screen
-    align-items: center; // 🔸
-    justify-content: center; // 🔸
+    
+    position: fixed; 
+    top:0; 
+    left:0; 
+    width: 100vw; 
+    height: 100vh;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     background: #333333;
     transition: opacity 0.75s, visibility 0.75s;
 
