@@ -4,13 +4,10 @@ import "/src/preloaders/_preloader4.scss";
 function Preloader4(props) {
   return (
     <>
-      <div className="container">
-        <div className="loader">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div className="content">
+          <div className="load load1"></div>
+          <div className="load load2"></div>
+          <div className="load load3"></div>
       </div>
     </>
   );
