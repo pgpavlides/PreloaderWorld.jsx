@@ -1,59 +1,59 @@
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
     
-  }
+//   }
 
-body {
+// body {
     
-    height: 100vh;
-    width: 100%;
-    background-color: #101010;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//     height: 100vh;
+//     width: 100%;
+//     background-color: #101010;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
     
-}
+// }
 
-.content {
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-}
+// .content {
+//     width: 100px;
+//     display: flex;
+//     justify-content: space-between;
+// }
 
-.load{
-    width: 25px;
-    height: 35px;
-    background:yellow;
-}
+// .load{
+//     width: 25px;
+//     height: 35px;
+//     background:yellow;
+// }
 
-.load1 {
-    background: #f9004d;
-    animation: animate 1s ease infinite;
-}
-.load2 {
-    background: #00f968;
-    animation: animate 1s ease infinite 0.3s;
-}
-.load3 {
-    background: #0089f9;
-    animation: animate 1s ease infinite 0.5s;
-}
+// .load1 {
+//     background: #f9004d;
+//     animation: animate 1s ease infinite;
+// }
+// .load2 {
+//     background: #00f968;
+//     animation: animate 1s ease infinite 0.3s;
+// }
+// .load3 {
+//     background: #0089f9;
+//     animation: animate 1s ease infinite 0.5s;
+// }
 
-@keyframes animate {
-    0% {
-       transform: scale(1,1) 
-    }
-    50% {
-        transform: scale(1,2.4) 
+// @keyframes animate {
+//     0% {
+//        transform: scale(1,1) 
+//     }
+//     50% {
+//         transform: scale(1,2.4) 
 
-    }
-    100% {
-        transform: scale(1,1) 
+//     }
+//     100% {
+//         transform: scale(1,1) 
 
-    }
-}
+//     }
+// }
 

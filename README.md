@@ -17,6 +17,7 @@ Make sure you check their channel and give them some love!
 
  - [dcode - Youtube 📹](https://www.youtube.com/@dcode-software)
  - [FullStackTechnologies - Youtube 📹](https://www.youtube.com/@FullStackTechnologies)
+ - [Tahmid Ahmed - Youtube 📹](https://www.youtube.com/@tahmidahmed-yt)
  
 
 
