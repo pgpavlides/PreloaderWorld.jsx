@@ -51,7 +51,9 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 ## 💾 Update Log
 
 🟢 Tue 02/14/2023 - 03:03 PM --> Addition of 2 Preloaders. Update the Colors. Seperate body to each components for no confusion.
+
 🟢 Wed 02/15/2023 - Restructure to counter css. Added 4th - 5th loader.
+
 🟢 Thu 02/16/2023 - Added 6th-7th Loader.
 
 
