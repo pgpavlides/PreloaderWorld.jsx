@@ -1,0 +1,102 @@
+div {
+    position: fixed;
+    width: 84px;
+    height: 84px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  span {
+    display: block;
+    width: 35px;
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+    &:nth-of-type(4n - 3) {
+      left: 24.5px;
+      animation-name: rotate1;
+
+    }
+    
+    &:nth-of-type(3) {
+      left: 2px;
+    }
+    
+    &:nth-of-type(7) {
+      right: 2px;
+    }
+    
+    &:nth-of-type(4n - 1) {
+      top: 24.5px;
+      width: 8px;
+      height: 35px;
+      animation-name: rotate1;
+
+    }
+    
+    &:nth-of-type(5) {
+      bottom: 0;
+    }
+    
+    &:nth-of-type(4n - 2) {
+      transform: rotate(-45deg);
+      animation-name: rotate2;
+    }
+    
+    &:nth-of-type(2) {
+      top: 12px;
+    }
+    
+     &:nth-of-type(6) {
+      bottom: 12px;
+      right: 0;
+    }
+    
+    &:nth-of-type(4n) {
+      transform: rotate(45deg);
+      animation-name: rotate3;
+      
+    }
+    
+    &:nth-of-type(4) {
+      bottom: 12px;
+    }
+    
+     &:nth-of-type(8) {
+      top: 12px;
+      right: 0;
+    }
+  }
+  
+  @keyframes rotate1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes rotate2 {
+    from {
+      transform: rotate(-45deg);
+    }
+    to {
+      transform: rotate(135deg);
+    }
+  }
+  
+  @keyframes rotate3 {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(225deg);
+    }
+  }

@@ -1,152 +1,152 @@
-@mixin keyframes ()
-
-
-.container {
-  position: fixed; // 🔹 make sure it appears above everything else
-  top: 0; // 🔸Position it at the top left corner of the screen
-  left: 0; // 🔸
-  width: 100vw; // 🔹 make it take the entire ViewPort
-  height: 100vh; // 🔹
-  display: flex; // 🔸 Make sure its centerted on the screen
-  align-items: center; // 🔸
-  justify-content: center; // 🔸
-  background: #333333;
-
-  &__box1,
-  &__box2,
-  &__box3,
-  &__box4
-   {
-    right: 51.4%;
-    top: 53.5%;
-    border-radius: 10px;
-    border: 3px solid #000000;
-    width: 45px;
-    height: 25px;
-    position: absolute;
-  }
-
-  &__circle{
-    width: 25px;
-    height: 25px;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(208,202,213,1) 0%, rgba(30,29,31,1) 48%, rgba(255,255,255,1) 100%);
-    border: 3px solid #000000;
-    border-radius: 20px;
-    animation: circle 2s linear infinite;
 
 
 
-  }
+// .container {
+//   position: fixed; // 🔹 make sure it appears above everything else
+//   top: 0; // 🔸Position it at the top left corner of the screen
+//   left: 0; // 🔸
+//   width: 100vw; // 🔹 make it take the entire ViewPort
+//   height: 100vh; // 🔹
+//   display: flex; // 🔸 Make sure its centerted on the screen
+//   align-items: center; // 🔸
+//   justify-content: center; // 🔸
+//   background: #333333;
+
+//   &__box1,
+//   &__box2,
+//   &__box3,
+//   &__box4
+//    {
+//     right: 51.4%;
+//     top: 53.5%;
+//     border-radius: 10px;
+//     border: 3px solid #000000;
+//     width: 45px;
+//     height: 25px;
+//     position: absolute;
+//   }
+
+//   &__circle{
+//     width: 25px;
+//     height: 25px;
+//     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(208,202,213,1) 0%, rgba(30,29,31,1) 48%, rgba(255,255,255,1) 100%);
+//     border: 3px solid #000000;
+//     border-radius: 20px;
+//     animation: circle 2s linear infinite;
+
+
+
+//   }
 
 
 
 
-  &__box1 {
-    background: red;
-    animation: box1a 2s linear infinite;
-  }
-  &__box2 {
-    background-color: rgb(19, 241, 30);
-    animation: box2a 2s 0.5s linear infinite;
-  }
+//   &__box1 {
+//     background: red;
+//     animation: box1a 2s linear infinite;
+//   }
+//   &__box2 {
+//     background-color: rgb(19, 241, 30);
+//     animation: box2a 2s 0.5s linear infinite;
+//   }
 
-  &__box3 {
-    background-color: rgb(255, 240, 29);
-    animation: box3a 2s 1s linear infinite;
-  }
-  &__box4 {
-    background-color: rgb(29, 101, 255);
-    animation: box4a 2s 1.5s linear infinite;
-  }
-}
+//   &__box3 {
+//     background-color: rgb(255, 240, 29);
+//     animation: box3a 2s 1s linear infinite;
+//   }
+//   &__box4 {
+//     background-color: rgb(29, 101, 255);
+//     animation: box4a 2s 1.5s linear infinite;
+//   }
+// }
 
-@keyframes box1a {
-  0% {
-    transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
-  }
-  20% {
-    transform: translateX(100px) rotate(72deg); 
-  }
-  40% {
-    transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
-  }
-  60% {
-    transform: translateX(0px) translateY(-100px) rotate(216deg);
-  }
-  80% {
-    transform: translateX(0px) translateY(-60px) rotate(288deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
-  }
-}
-@keyframes box2a {
-  0% {
-    transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
-  }
-  20% {
-    transform: translateX(100px) rotate(72deg); 
-  }
-  40% {
-    transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
-  }
-  60% {
-    transform: translateX(0px) translateY(-100px) rotate(216deg);
-  }
-  80% {
-    transform: translateX(0px) translateY(-60px) rotate(288deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
-  }
-}
-@keyframes box3a {
-  0% {
-    transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
-  }
-  20% {
-    transform: translateX(100px) rotate(72deg); 
-  }
-  40% {
-    transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
-  }
-  60% {
-    transform: translateX(0px) translateY(-100px) rotate(216deg);
-  }
-  80% {
-    transform: translateX(0px) translateY(-60px) rotate(288deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
-  }
-}
-@keyframes box4a {
-  0% {
-    transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
-  }
-  20% {
-    transform: translateX(100px) rotate(72deg); 
-  }
-  40% {
-    transform: translateX(100px) translateY(-100px) rotate(144deg) scale(2) scaleX(0.5);
-  }
-  60% {
-    transform: translateX(0px) translateY(-100px) rotate(216deg);
-  }
-  80% {
-    transform: translateX(0px) translateY(-60px) rotate(288deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
-  }
-}
+// @keyframes box1a {
+//   0% {
+//     transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
+//   }
+//   20% {
+//     transform: translateX(100px) rotate(72deg); 
+//   }
+//   40% {
+//     transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
+//   }
+//   60% {
+//     transform: translateX(0px) translateY(-100px) rotate(216deg);
+//   }
+//   80% {
+//     transform: translateX(0px) translateY(-60px) rotate(288deg);
+//   }
+//   100% {
+//     transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
+//   }
+// }
+// @keyframes box2a {
+//   0% {
+//     transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
+//   }
+//   20% {
+//     transform: translateX(100px) rotate(72deg); 
+//   }
+//   40% {
+//     transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
+//   }
+//   60% {
+//     transform: translateX(0px) translateY(-100px) rotate(216deg);
+//   }
+//   80% {
+//     transform: translateX(0px) translateY(-60px) rotate(288deg);
+//   }
+//   100% {
+//     transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
+//   }
+// }
+// @keyframes box3a {
+//   0% {
+//     transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
+//   }
+//   20% {
+//     transform: translateX(100px) rotate(72deg); 
+//   }
+//   40% {
+//     transform: translateX(100px) translateY(-100px) rotate(144deg) scale(1.8) scaleX(0.5);
+//   }
+//   60% {
+//     transform: translateX(0px) translateY(-100px) rotate(216deg);
+//   }
+//   80% {
+//     transform: translateX(0px) translateY(-60px) rotate(288deg);
+//   }
+//   100% {
+//     transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
+//   }
+// }
+// @keyframes box4a {
+//   0% {
+//     transform: translateX(0px) rotate(0deg) scale(1) scaleX(1)  ;
+//   }
+//   20% {
+//     transform: translateX(100px) rotate(72deg); 
+//   }
+//   40% {
+//     transform: translateX(100px) translateY(-100px) rotate(144deg) scale(2) scaleX(0.5);
+//   }
+//   60% {
+//     transform: translateX(0px) translateY(-100px) rotate(216deg);
+//   }
+//   80% {
+//     transform: translateX(0px) translateY(-60px) rotate(288deg);
+//   }
+//   100% {
+//     transform: translateX(0px) rotate(360deg) scale(1) scaleX(1);
+//   }
+// }
 
-@keyframes circle {
-    0% {
-        transform: rotate(0turn);
-    }
-    100% {
-        transform: rotate(1turn);
-    }
+// @keyframes circle {
+//     0% {
+//         transform: rotate(0turn);
+//     }
+//     100% {
+//         transform: rotate(1turn);
+//     }
     
-}
+// }
