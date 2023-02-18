@@ -56,6 +56,14 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 
 🟢 Thu 02/16/2023 --> Added 6th-7th Loader.
 
+🟢 Fri 02/17/2023 --> Added 8th-9th-10th-11th-12th Loader.
+
+🟢 Sat 02/18/2023 --> Added 13th Loader
+
+
+
+
+
 
 
 
