@@ -1,0 +1,76 @@
+$light-color: rgb(199, 201, 198);
+$dark-color: rgb(206, 206, 206);
+
+.container {
+  position: fixed; // 🔹 make sure it appears above everything else
+  top: 0; // 🔸Position it at the top left corner of the screen
+  left: 0; // 🔸
+  width: 100vw; // 🔹 make it take the entire ViewPort
+  height: 100vh; // 🔹
+  display: flex; // 🔸 Make sure its centerted on the screen
+  align-items: center; // 🔸
+  justify-content: center; // 🔸
+  background-color: rgb(58, 58, 58);
+}
+
+#darkGroup {
+  fill: $dark-color;
+}
+#lightGroup {
+  fill: $light-color;
+}
+
+#light1,
+#dark1,
+#dark2 {
+    animation: animatelight1 3s ease infinite;
+}
+
+#light1 {
+    opacity: 1;
+  }
+
+#dark1 {
+  transform: translateX(10%);
+  animation: animatedark1 3s ease infinite;
+
+}
+
+#dark2 {
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: animatedark2 3s ease infinite;
+
+}
+
+@keyframes animatedark1 {
+    0%,100% {
+        transform: translateX(10%);
+    }
+
+    50% {
+        transform: translateX(35%);
+        opacity: 0;
+
+    }
+}
+@keyframes animatedark2 {
+    0%,100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-26%);
+         opacity: 1;
+    }
+}
+@keyframes animatelight1 {
+    0%,100% {
+        transform: translateX(-24%);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+}

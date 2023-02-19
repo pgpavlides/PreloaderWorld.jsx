@@ -1,0 +1,49 @@
+
+
+.content {
+    top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #021116; 
+    
+    
+}
+
+.load{
+    width: 25px;
+    height: 35px;
+    background:yellow;
+}
+
+.load1 {
+    background: #f9004d;
+    animation: animate 1s ease infinite;
+}
+.load2 {
+    background: #00f968;
+    animation: animate 1s ease infinite 0.3s;
+}
+.load3 {
+    background: #0089f9;
+    animation: animate 1s ease infinite 0.5s;
+}
+
+@keyframes animate {
+    0% {
+       transform: scale(1,1) 
+    }
+    50% {
+        transform: scale(1,2.4) 
+
+    }
+    100% {
+        transform: scale(1,1) 
+
+    }
+}
+
