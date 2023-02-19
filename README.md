@@ -66,7 +66,7 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 
 🟢 Sat 02/18/2023 --> Addition of 2 Preloaders.
 
-🟢 Sun 02/19/2023 --> Addition of 1 Preloaders. Readme Update.
+🟢 Sun 02/19/2023 --> Addition of 2 Preloaders. Readme Update.
 
 
 
