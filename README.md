@@ -18,6 +18,10 @@ Make sure you check their channel and give them some love!
  - [dcode - Youtube 📹](https://www.youtube.com/@dcode-software)
  - [FullStackTechnologies - Youtube 📹](https://www.youtube.com/@FullStackTechnologies)
  - [Tahmid Ahmed - Youtube 📹](https://www.youtube.com/@tahmidahmed-yt)
+ - [Kevin Powell - Youtube 📹](https://www.youtube.com/@KevinPowell)
+ - [Tech and Code In Greek - Youtube 📹](https://www.youtube.com/@TechandCodeInGreek)
+ - [Aaron Jack - Youtube 📹](https://www.youtube.com/@AaronJack)
+ - [Slaying The Dragon - Youtube 📹](https://www.youtube.com/@slayingthedragon)
  
 
 
@@ -52,13 +56,15 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 
 🟢 Tue 02/14/2023 -->  Addition of 2 Preloaders. Update the Colors. Seperate body to each components for no confusion.
 
-🟢 Wed 02/15/2023 --> Restructure to counter css. Added 4th - 5th loader.
+🟢 Wed 02/15/2023 --> Addition of 2 Preloaders. Restructure to counter css. 
 
-🟢 Thu 02/16/2023 --> Added 6th-7th Loader.
+🟢 Thu 02/16/2023 --> Addition of 2 Preloaders.
 
-🟢 Fri 02/17/2023 --> Added 8th-9th-10th-11th-12th Loader.
+🟢 Fri 02/17/2023 --> Addition of 5 Preloaders.
 
-🟢 Sat 02/18/2023 --> Added 13th-14th Loader
+🟢 Sat 02/18/2023 --> Addition of 2 Preloaders.
+
+🟢 Sun 02/19/2023 --> Addition of 1 Preloaders. Readme Update.
 
 
 
