@@ -1,7 +1,7 @@
 
 # PreloaderWorld.jsx
 
-![alt text](https://ibb.co/XSBrJKK)
+[![alt text](https://ibb.co/XSBrJKK)](https://i.ibb.co/cD5STZZ/Logo-T.png)
 
 📖 This repository contains a collection of preloaders that you can use in your projects. 
 
