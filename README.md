@@ -1,6 +1,8 @@
 
 # PreloaderWorld.jsx
 
+![alt text](https://i.ibb.co/9hRQc1q/Logo-orthogonio.png)  
+
 📖 This repository contains a collection of preloaders that you can use in your projects. 
 
 ⚠️Everything is under heavy development.⚠️
