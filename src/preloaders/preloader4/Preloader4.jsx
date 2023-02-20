@@ -8,6 +8,7 @@ function Preloader4(props) {
           <div className={`${preloader4.load} ${preloader4.load1}`}></div>
           <div className={`${preloader4.load} ${preloader4.load2}`}></div>
           <div className={`${preloader4.load} ${preloader4.load3}`}></div>
+          <div className="load load1"></div>
         </div>
     </>
   );

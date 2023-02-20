@@ -70,6 +70,8 @@ Inside the project you will find **_colors.scss**. This is a variable scss file 
 
 🟢 Mon 02/20/2023 --> Rework of all the Components. Converted each scss to a module so there are no confilts between classNames. Can now preview prerloader by changing the component in the App.jsx. 
 
+🟢 Tue 02/21/2023 --> Addition of 2 Preloaders.
+
 
 
 
