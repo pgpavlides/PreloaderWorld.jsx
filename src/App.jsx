@@ -17,6 +17,7 @@ import Preloader16 from './preloaders/preloader16/Preloader16'
 import Preloader17 from './preloaders/preloader17/Preloader17'
 import Preloader18 from './preloaders/preloader18/Preloader18'
 import Preloader19 from './preloaders/preloader19/Preloader19'
+import Preloader20 from './preloaders/preloader20/Preloader20'
 
 import './App.scss'
 import './main.scss'
@@ -30,7 +31,7 @@ function App() {
   return <>
   
 
-  <Preloader19/>
+  <Preloader20/>
 
   </>
     
