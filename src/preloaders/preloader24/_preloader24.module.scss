@@ -1,0 +1,51 @@
+$light-color: rgb(199, 201, 198);
+$dark-color: rgb(206, 206, 206);
+
+.container {
+  position: fixed; // 🔹 make sure it appears above everything else
+  top: 0; // 🔸Position it at the top left corner of the screen
+  left: 0; // 🔸
+  width: 100vw; // 🔹 make it take the entire ViewPort
+  height: 100vh; // 🔹
+  display: flex; // 🔸 Make sure its centerted on the screen
+  align-items: center; // 🔸
+  justify-content: center; // 🔸
+  background-color: rgb(82, 82, 82);
+  
+}
+
+#radialgroup {
+  
+     animation-delay: 10s; 
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+// $continue-loop: true;
+// $i: 1;
+// @while $continue-loop {
+//   // Do something with $i
+//   @debug $i;
+//   $i: $i + 1;
+  
+// }
+
+@for $i from 1 through 12 {
+  $id: if($i == 1, 'd1', 'd' + $i);
+
+  ##{$id} {
+    
+    animation: animate 0.3s ease-in-out infinite;
+    animation-delay: #{$i * 0.1}s;
+    transform-origin: center;   
+  }
+}
+
+@keyframes animate {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.3);}
+  100% { transform: scale(1);}
+
+}
+
