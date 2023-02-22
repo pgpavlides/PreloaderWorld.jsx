@@ -31,16 +31,16 @@ $dark-color: rgb(206, 206, 206);
   
 // }
 
-@for $i from 1 through 12 {
-  $id: if($i == 1, 'd1', 'd' + $i);
+// @for $i from 1 through 12 {
+//   $id: if($i == 1, 'd1', 'd' + $i);
 
-  ##{$id} {
+//   ##{$id} {
     
-    animation: animate 0.3s ease-in-out infinite;
-    animation-delay: #{$i * 0.1}s;
-    transform-origin: center;   
-  }
-}
+//     animation: animate 0.3s ease-in-out infinite;
+//     animation-delay: #{$i * 0.1}s;
+//     transform-origin: center;   
+//   }
+// }
 
 @keyframes animate {
   0% { transform: scale(1);}

@@ -17,5 +17,4 @@ function Preloader16(props) {
         </>
     );
 }
-
 export default Preloader16;

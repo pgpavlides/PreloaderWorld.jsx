@@ -14,7 +14,6 @@ function Preloader9(props) {
       <div className={preloader9.container__box4}></div>
       <div className={preloader9.container__box5}></div>
       
-      
     </div>  
       
     </>

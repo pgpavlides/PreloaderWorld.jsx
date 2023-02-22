@@ -21,7 +21,7 @@ import Preloader20 from './preloaders/preloader20/Preloader20'
 import Preloader21 from './preloaders/preloader21/Preloader21'
 import Preloader22 from './preloaders/preloader22/Preloader22'
 import Preloader23 from './preloaders/preloader23/Preloader23'
-import Preloader24 from './preloaders/preloader24/Preloader24ba'
+import Preloader24 from './preloaders/preloader24/Preloader24'
 
 import './App.scss'
 import './main.scss'
