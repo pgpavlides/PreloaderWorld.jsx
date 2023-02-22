@@ -1,0 +1,114 @@
+$light-color: rgb(199, 201, 198);
+$dark-color: rgb(206, 206, 206);
+
+.container {
+  position: fixed; // 🔹 make sure it appears above everything else
+  top: 0; // 🔸Position it at the top left corner of the screen
+  left: 0; // 🔸
+  width: 100vw; // 🔹 make it take the entire ViewPort
+  height: 100vh; // 🔹
+  display: flex; // 🔸 Make sure its centerted on the screen
+  align-items: center; // 🔸
+  justify-content: center; // 🔸
+  background-color: rgb(29, 29, 29);
+}
+
+#pyramid {
+  fill: #ddda00;
+}
+
+#eclipses {
+  transform-origin: center;
+}
+
+#eclipse_1 {
+  transform-origin: center;
+
+  animation: eclipse1 7s ease infinite;
+}
+#eclipse_2 {
+  transform-origin: center;
+
+  animation: eclipse2 5.5s ease-in-out infinite;
+}
+#eclipse_3 {
+  transform-origin: center;
+
+  animation: eclipse3 10s ease-in-out infinite;
+}
+
+#outer_1 {
+  transform-origin: center;
+  animation: eclipse1 5s ease-in-out infinite;
+}
+#outer_2 {
+  transform-origin: center;
+  animation: eclipse2 8s linear infinite;
+}
+#outer_3 {
+  transform-origin: center;
+  animation: eclipse2 8s ease-in-out infinite;
+}
+#outer_4 {
+  transform-origin: center;
+  animation: eclipse2 5s ease-in-out infinite;
+}
+
+#mesa_mati {
+  transform-origin: center;
+  animation: moveEye 7s ease infinite;
+}
+
+#telitsa_mati {
+  transform-origin: center;
+  animation: moveEye 7s ease infinite;
+}
+
+@keyframes eclipse1 {
+ 
+  to {
+    transform: rotateZ(360deg);
+  }
+
+}
+@keyframes eclipse2 {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes eclipse3 {
+  0% {
+  }
+
+  35% {
+    transform: rotateZ(360deg);
+  }
+  70% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes moveEye {
+  0% {
+  }
+
+  20% {
+    transform: translateX(-4px);
+  }
+  35% {
+    transform: translateX(5px) translateY(0.5px);
+  }
+  45% {
+    transform: translateY(3px);
+  }
+  55% {
+    transform: translateX(-4px);
+  }
+  65% {
+    transform: translateY(3px);
+  }
+
+  85% {
+    transform: translateX(-4px);
+  }
+}
