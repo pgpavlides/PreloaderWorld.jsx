@@ -1,0 +1,44 @@
+$light-color: rgb(199, 201, 198);
+$dark-color: rgb(206, 206, 206);
+
+.container {
+  position: fixed; // 🔹 make sure it appears above everything else
+  top: 0; // 🔸Position it at the top left corner of the screen
+  left: 0; // 🔸
+  width: 100vw; // 🔹 make it take the entire ViewPort
+  height: 100vh; // 🔹
+  display: flex; // 🔸 Make sure its centerted on the screen
+  align-items: center; // 🔸
+  justify-content: center; // 🔸
+  background-color: rgb(82, 82, 82);
+}
+
+#pokeball {
+  animation: rotate 6s ease-in-out infinite;
+  transform-origin: center;
+  
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  
+
+  
+  
+  
+}
