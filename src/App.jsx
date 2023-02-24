@@ -23,6 +23,7 @@ import Preloader22 from './preloaders/preloader22/Preloader22'
 import Preloader23 from './preloaders/preloader23/Preloader23'
 import Preloader24 from './preloaders/preloader24/Preloader24'
 import Preloader25 from './preloaders/preloader25/Preloader25'
+import Preloader26 from './preloaders/preloader26/Preloader26'
 
 import './App.scss'
 import './main.scss'
@@ -36,7 +37,7 @@ function App() {
   return <>
   
 
-  <Preloader25/>
+  <Preloader26/>
 
   </>
     

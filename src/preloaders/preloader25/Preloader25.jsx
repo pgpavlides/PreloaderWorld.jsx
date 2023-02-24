@@ -1,6 +1,8 @@
 import React from "react";
 import preloader25 from "/src/preloaders/preloader25/_preloader25.module.scss";
 
+// TODO so loud
+
 function Preloader25(props) {
   return (
     <>
