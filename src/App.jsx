@@ -37,7 +37,7 @@ function App() {
   return <>
   
 
-  <Preloader26/>
+  <Preloader24/>
 
   </>
     

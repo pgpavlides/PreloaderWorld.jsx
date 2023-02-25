@@ -4,35 +4,31 @@ import preloader24 from "/src/preloaders/preloader24/_preloader24.module.scss";
 function Preloader24(props) {
 
   
-  useEffect(() => {
-    console.log("mpika");
-    const svg = document.querySelector('svg')
+  useEffect(() => {  
     const myAnimationLoop = () => {
-      // Use a for loop to apply the animation properties to the appropriate elements
-      for (let i = 1; i <= 12; i++) {
-        let id = i === 1 ? "d1" : "d" + i;
-        let elementa = document.querySelector(`#${preloader24.d11}`)   ;
-        const element = svg.getElementById(`${preloader24.d11}`);
-        // element.style.animation = "animate 0.3s linear";
-        // element.style.animationDelay = i * 0.1 + "s";
-        // element.style.transformOrigin = "center";
-        console.log(element);
-      }
-       // Optional debug statement to show that the loop has completed
-    };
+      for (let i = 1; i <= 12; i++) {      
+        let element = document.querySelectorAll(`.${preloader24.container}`);
+        let radialgroup = element[0].children[0].children[0].children[0].children[-1 + i];     
+        radialgroup.style.animation = "animate 0.3s linear";
+        radialgroup.style.animationDelay = i * 0.1 + "s";
+        radialgroup.style.transformOrigin = "center";
+        console.log(radialgroup);
+      }       
+    }; 
 
-    myAnimationLoop(); // Call the function once to start the loop
+    myAnimationLoop(); 
 
     const interval = setInterval(() => myAnimationLoop(), 500); // Loop every 5 seconds (5000 milliseconds)
 
-    // Return a cleanup function to clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
+      
       <div className={preloader24.container}>
         <svg
+          id={preloader24.svgmain}
           width="756"
           height="426"
           viewBox="0 0 378 213"
@@ -660,6 +656,7 @@ function Preloader24(props) {
       </div>
     </>
   );
+  
 }
 
 export default Preloader24;

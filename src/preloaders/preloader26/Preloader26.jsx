@@ -2,6 +2,11 @@ import React from "react";
 import preloader26 from "/src/preloaders/preloader26/_preloader26.module.scss";
 
 
+// ! ORIGINAL CREATOR:
+// ? Jon Kanter
+// link :  https://codepen.io/jkantner/pen/xxJmMVa
+
+
 
 function Preloader26(props) {
   return (

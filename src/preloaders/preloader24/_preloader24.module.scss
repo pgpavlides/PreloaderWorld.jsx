@@ -12,14 +12,16 @@ $dark-color: rgb(206, 206, 206);
   justify-content: center; // 🔸
   background-color: rgb(82, 82, 82);
   
+  
+  
 }
 
 #radialgroup {
   
-     animation-delay: 10s; 
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    //  animation-delay: 10s; 
+    // animation-direction: alternate;
+    // animation-fill-mode: forwards;
+    // animation-iteration-count: infinite;
 }
 
 // $continue-loop: true;
@@ -47,5 +49,9 @@ $dark-color: rgb(206, 206, 206);
   50% { transform: scale(1.3);}
   100% { transform: scale(1);}
 
+}
+
+#d2{
+  // animation: animate 0.3s ease-in-out infinite;
 }
 
