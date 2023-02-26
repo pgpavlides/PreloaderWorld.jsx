@@ -2,26 +2,37 @@ import React, { useEffect } from "react";
 import preloader24 from "/src/preloaders/preloader24/_preloader24.module.scss";
 
 function Preloader24(props) {
-  useEffect(() => {
+
+  
+  useEffect(() => {  
     const myAnimationLoop = () => {
-      for (let i = 1; i <= 12; i++) {
-        let container = document.querySelector(`.${preloader24.container}`);
-        let element = document.querySelector(`#${preloader24.svgmain}`);
+      for (let i = 1; i <= 12; i++) {      
+        // let element = document.querySelector(`${preloader24.svgmain}`);
+        // let element = document.querySelectorAll(`.${preloader24.container}`);
+        let element = document.querySelectorAll(`.${preloader24.svgmain}`);
+        // let radialgroup = element[0].children[0].children[0].children[0].children[-1 + i];
+        console.log(element);   
+        
+        // radialgroup.style.animation = "animate 0.3s linear";
+        // radialgroup.style.animationDelay = i * 0.1 + "s";
+        // radialgroup.style.transformOrigin = "center";
+        // radialgroup.style.fill = "green";
+       
+      }       
+    }; 
+    // let svgElement = document.querySelector(`.${preloader24.container} > svg#${preloader24.svgmain}`);
 
-        console.log(container);
-        console.log(element);
-      }
-    };
+    
+    myAnimationLoop(); 
 
-    myAnimationLoop();
+    // const interval = setInterval(() => myAnimationLoop(), 500); // Loop every 5 seconds (5000 milliseconds)
 
-    const interval = setInterval(() => myAnimationLoop(), 10000); // Loop every 5 seconds (5000 milliseconds)
-
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   return (
     <>
+      
       <div className={preloader24.container}>
         <svg
           id={preloader24.svgmain}
@@ -33,7 +44,8 @@ function Preloader24(props) {
         >
           <g id={preloader24.frame}>
             <g id={preloader24.radialgroup}>
-              <g id={preloader24.d11} filter="url(#filter0_d_0_3)">
+              <g 
+              id={preloader24.d11} filter="url(#filter0_d_0_3)">
                 <circle
                   cx="166.5"
                   cy="68.0289"
@@ -651,6 +663,7 @@ function Preloader24(props) {
       </div>
     </>
   );
+  
 }
 
 export default Preloader24;
