@@ -1,114 +1,114 @@
-$light-color: rgb(199, 201, 198);
-$dark-color: rgb(206, 206, 206);
-$animation-time: 5s;
+// $light-color: rgb(199, 201, 198);
+// $dark-color: rgb(206, 206, 206);
+// $animation-time: 5s;
 
-.container {
-  position: fixed; // 🔹 make sure it appears above everything else
-  top: 0; // 🔸Position it at the top left corner of the screen
-  left: 0; // 🔸
-  width: 100vw; // 🔹 make it take the entire ViewPort
-  height: 100vh; // 🔹
-  display: flex; // 🔸 Make sure its centerted on the screen
-  align-items: center; // 🔸
-  justify-content: center; // 🔸
-  background-color: rgb(82, 82, 82);
-}
+// .container {
+//   position: fixed; // 🔹 make sure it appears above everything else
+//   top: 0; // 🔸Position it at the top left corner of the screen
+//   left: 0; // 🔸
+//   width: 100vw; // 🔹 make it take the entire ViewPort
+//   height: 100vh; // 🔹
+//   display: flex; // 🔸 Make sure its centerted on the screen
+//   align-items: center; // 🔸
+//   justify-content: center; // 🔸
+//   background-color: rgb(82, 82, 82);
+// }
 
 
-$dot-count: 26;
-$dot-size: 10px;
-$dot-space: 15px;
-$dot-start: (($dot-count / 2 + 1) * ($dot-size + $dot-space)) / 2;
+// $dot-count: 26;
+// $dot-size: 10px;
+// $dot-space: 15px;
+// $dot-start: (($dot-count / 2 + 1) * ($dot-size + $dot-space)) / 2;
 
-$animation-time: 2s;
-$animation-distance: 25px;
+// $animation-time: 2s;
+// $animation-distance: 25px;
 
-.loader {
-  position: relative;
+// .loader {
+//   position: relative;
 
-  .dot {
-    animation-name: movement;
-    animation-duration: $animation-time;
-    animation-iteration-count: infinite; 
-    animation-timing-function: ease-in-out;
-    height: $dot-size;
-    position: absolute;
-    top: -#{$dot-size};
-    transform: translate3d(0, -#{$animation-distance}, 0) scale(1);
-    width: $dot-size;
+//   .dot {
+//     animation-name: movement;
+//     animation-duration: $animation-time;
+//     animation-iteration-count: infinite; 
+//     animation-timing-function: ease-in-out;
+//     height: $dot-size;
+//     position: absolute;
+//     top: -#{$dot-size};
+//     transform: translate3d(0, -#{$animation-distance}, 0) scale(1);
+//     width: $dot-size;
  
-    @for $i from 1 through $dot-count {
-      $dot-move: ceil($i / 2);
-      $dot-pos: $dot-start - (($dot-size + $dot-space) * $dot-move);
+//     @for $i from 1 through $dot-count {
+//       $dot-move: ceil($i / 2);
+//       $dot-pos: $dot-start - (($dot-size + $dot-space) * $dot-move);
       
-      $animation-delay: -#{$i * .1}s;
-      @if $i % 2 == 0 {
-        $animation-delay: -#{($i * .1) + ($animation-time / 2)};
-      }
+//       $animation-delay: -#{$i * .1}s;
+//       @if $i % 2 == 0 {
+//         $animation-delay: -#{($i * .1) + ($animation-time / 2)};
+//       }
       
-      &:nth-of-type(#{$i}) {
-        animation-delay: $animation-delay; 
-        left: $dot-pos;
+//       &:nth-of-type(#{$i}) {
+//         animation-delay: $animation-delay; 
+//         left: $dot-pos;
         
-        &::before {
-          animation-delay: $animation-delay; 
-        }
-      }
-    }
+//         &::before {
+//           animation-delay: $animation-delay; 
+//         }
+//       }
+//     }
 
-    &::before {
-      animation-name: size-opacity;
-      animation-duration: $animation-time;
-      animation-iteration-count: infinite; 
-      animation-timing-function: ease;
-      background: rgb(85, 223, 31);
-      border-radius: 50%;
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-    }
+//     &::before {
+//       animation-name: size-opacity;
+//       animation-duration: $animation-time;
+//       animation-iteration-count: infinite; 
+//       animation-timing-function: ease;
+//       background: rgb(85, 223, 31);
+//       border-radius: 50%;
+//       content: '';
+//       display: block;
+//       height: 100%;
+//       width: 100%;
+//     }
     
-    &:nth-of-type(even)::before {
-      background-color: #27c734;
-      box-shadow: inset 0 0 4px darken(#414141, 10%);
-    }
-  }
-}
+//     &:nth-of-type(even)::before {
+//       background-color: #27c734;
+//       box-shadow: inset 0 0 4px darken(#414141, 10%);
+//     }
+//   }
+// }
 
-@keyframes movement {
-  0% {
-    transform: translate3d(0, -#{$animation-distance}, 0);
-    z-index: 0;
-  }
-  50% {
-    transform: translate3d(0, #{$animation-distance}, 0);
-    z-index: 10;
-  }
-  100% {
-    transform: translate3d(0, -#{$animation-distance}, 0);
-    z-index: -5;
-  }
-}
+// @keyframes movement {
+//   0% {
+//     transform: translate3d(0, -#{$animation-distance}, 0);
+//     z-index: 0;
+//   }
+//   50% {
+//     transform: translate3d(0, #{$animation-distance}, 0);
+//     z-index: 10;
+//   }
+//   100% {
+//     transform: translate3d(0, -#{$animation-distance}, 0);
+//     z-index: -5;
+//   }
+// }
 
-@keyframes size-opacity {
-  0% { 
-    opacity: 1;
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.5);
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: .35;
-    transform: scale(.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+// @keyframes size-opacity {
+//   0% { 
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+//   25% {
+//     transform: scale(1.5);
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   75% {
+//     opacity: .35;
+//     transform: scale(.5);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+// }
 
