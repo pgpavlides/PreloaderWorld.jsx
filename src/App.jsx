@@ -33,6 +33,7 @@ import Preloader26 from './preloaders/preloader26/Preloader26'
 import Preloader27 from './preloaders/preloader27/Preloader27'
 import Preloader28 from './preloaders/preloader28/Preloader28'
 import Preloader29 from './preloaders/preloader29/Preloader29'
+import Preloader30 from './preloaders/preloader30/Preloader30'
 
 
 import './App.scss'
@@ -45,26 +46,8 @@ function App() {
   
 
   return <>
-  
-  {/* <div className="mb-2">
-        {[DropdownButton, SplitButton].map((DropdownType, idx) => (
-          <DropdownType
-            as={ButtonGroup}
-            key={idx}
-            id={`dropdown-button-drop-${idx}`}
-            size="lg"
-            title="Drop large"
-          >
-            <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-            <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-            <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-          </DropdownType>
-        ))}
-      </div> */}
       
-  <Preloader29/>
+  <Preloader30/>
 
   </>
     
